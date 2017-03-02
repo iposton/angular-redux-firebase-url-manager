@@ -1,19 +1,12 @@
 import firebase from 'firebase';
 
-// const doSomething = function(key) {
-//   console.log(key);
-// }
 
-//doSomething(process.env);
-//this._http.get(process.env.API_URL, options);
-//doSomething(process.env)
-console.log(process.env.API_KEY);
 const config = {
     apiKey: process.env.API_KEY,
-    authDomain: AUTH_DOM,
-    databaseURL: DB_URL,
-    storageBucket: STRG_BKT,
-    messagingSenderId: MS_ID
+    authDomain: process.env.AUTH_DOM,
+    databaseURL: process.env.DB_URL,
+    storageBucket: process.env.STRG_BKT,
+    messagingSenderId: process.env.MS_ID
 };
 
 firebase.initializeApp(config);
