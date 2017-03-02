@@ -1,1 +1,3 @@
-# An Angular 1.x url manager with Redux and Firebase
+# An Angular 1.x url manager with Redux and Firebase - [Demo](https://my-url-manager.herokuapp.com/)
+
+Get started quick by pushing this to repo to Heroku! There are important config vars that need to be set up for Heroku to work. After you create a heroku app run <code>heroku config:set NPM_CONFIG_PRODUCTION=false</code> this will make sure all modules from package.json install properly. Also the API_KEY and DB_URL from the firebase database will need to be set. If you are working locally just put your keys in database.js in the config block but it's best not to push keys to github. It is better to store keys in heroku for live production of this app. Enjoy! More details and features coming soon.  
