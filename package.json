@@ -1,0 +1,81 @@
+{
+  "name": "angular-redux-firebase",
+  "version": "0.0.1",
+  "description": "Simple url manager built with Angular 1.x, ng-redux, Webpack, and Gulp.",
+  "main": "client/bundle.js",
+  "dependencies": {
+    "angular": "1.5.7",
+    "angular-animate": "1.5.7",
+    "angular-mocks": "1.5.7",
+    "angular-ui-router": "^0.3.1",
+    "angularfire": "^2.3.0",
+    "bootstrap-css-only": "3.3.6",
+    "firebase": "^3.6.10",
+    "lodash": "^4.13.1",
+    "ng-redux": "^3.3.3",
+    "normalize.css": "4.1.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.2",
+    "redux": "^3.6.0",
+    "redux-devtools": "^3.3.2",
+    "redux-devtools-dock-monitor": "^1.1.1",
+    "redux-devtools-log-monitor": "^1.2.0",
+    "redux-thunk": "^2.1.0"
+  },
+  "devDependencies": {
+    "angular-mocks": "1.5.7",
+    "babel-core": "^6.0.0",
+    "babel-loader": "^6.0.0",
+    "babel-preset-es2015": "^6.0.0",
+    "babel-preset-react": "^6.22.0",
+    "browser-sync": "2.13.0",
+    "css-loader": "0.23.1",
+    "file-loader": "0.9.0",
+    "fs-walk": "0.0.1",
+    "gulp": "3.9.1",
+    "gulp-rename": "1.2.2",
+    "gulp-template": "4.0.0",
+    "jasmine": "2.4.1",
+    "jasmine-core": "2.4.1",
+    "karma": "1.1.0",
+    "karma-jasmine": "1.0.2",
+    "karma-phantomjs-launcher": "1.0.1",
+    "karma-sourcemap-loader": "0.3.7",
+    "karma-spec-reporter": "0.0.26",
+    "karma-webpack": "1.7.0",
+    "ng-annotate-loader": "0.1.0",
+    "node-libs-browser": "1.0.0",
+    "phantomjs-prebuilt": "2.1.7",
+    "raw-loader": "0.5.1",
+    "run-sequence": "1.2.1",
+    "style-loader": "0.13.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "2.1.1",
+    "url-loader": "0.5.7",
+    "webpack": "1.13.1",
+    "webpack-dev-middleware": "^1.6.1",
+    "webpack-hot-middleware": "^2.12.2",
+    "webpack-stream": "3.2.0",
+    "yargs": "4.7.1"
+  },
+  "scripts": {
+    "start": "gulp",
+    "test": "karma start"
+  },
+  "keywords": [
+    "angular",
+    "webpack",
+    "es6",
+    "redux",
+    "ng-redux"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iposton/angular-redux-firebase-url-manager"
+  },
+  "author": {
+   
+  },
+  "license": "Apache-2.0"
+}
