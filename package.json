@@ -61,7 +61,6 @@
   },
   "scripts": {
     "start": "gulp",
-    "postinstall": "gulp default",
     "test": "karma start"
   },
   "keywords": [
