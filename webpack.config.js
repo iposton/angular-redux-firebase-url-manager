@@ -2,6 +2,15 @@ import webpack from "webpack";
 import path from 'path';
 
 const root = 'client';
+const constants = {
+     'API_KEY' : process.env.API_KEY,
+     'AUTH_DOM' : process.env.AUTH_DOM,
+     'DB_URL' : process.env.DB_URL,
+     'STRG_BKT' : process.env.STRG_BKT,
+     'MS_ID' : process.env.MS_ID,
+ 
+     
+};
 
 module.exports = {
   devtool: 'sourcemap',
@@ -26,6 +35,7 @@ module.exports = {
   plugins: [
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin()
+    new webpack.NoErrorsPlugin(),
+    new webpack.DefinePlugin(constants)
   ]
 };
