@@ -1,5 +1,11 @@
 import firebase from 'firebase';
 
+const doSomething = function(key) {
+  console.log(key);
+}
+
+doSomething(webpack.constants.envVar1);
+
 const config = {
     apiKey: API_KEY,
     authDomain: AUTH_DOM,

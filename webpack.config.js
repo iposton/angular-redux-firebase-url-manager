@@ -3,11 +3,11 @@ import path from 'path';
 
 const root = 'client';
 const constants = {
-     API_KEY : process.env.API_KEY,
-     AUTH_DOM : process.env.AUTH_DOM,
-     DB_URL : process.env.DB_URL,
-     STRG_BKT : process.env.STRG_BKT,
-     MS_ID : process.env.MS_ID    
+     'webpack.constants.envVar1' : process.env.API_KEY,
+     'webpack.constants.envVar2' : process.env.AUTH_DOM,
+     'webpack.constants.envVar3' : process.env.DB_URL,
+     'webpack.constants.envVar4' : process.env.STRG_BKT,
+     'webpack.constants.envVar5' : process.env.MS_ID    
 }
 
 module.exports = {
