@@ -7,10 +7,8 @@ const constants = {
      'AUTH_DOM' : process.env.AUTH_DOM,
      'DB_URL' : process.env.DB_URL,
      'STRG_BKT' : process.env.STRG_BKT,
-     'MS_ID' : process.env.MS_ID,
- 
-     
-};
+     'MS_ID' : process.env.MS_ID    
+}
 
 module.exports = {
   devtool: 'sourcemap',
