@@ -5,9 +5,9 @@ import firebase from 'firebase';
 // }
 
 //doSomething(process.env);
-this._http.get(process.env.API_URL, options);
+//this._http.get(process.env.API_URL, options);
 //doSomething(process.env)
-console.log(process.env.API_URL + ' ' + options);
+console.log(process.env.API_URL);
 const config = {
     apiKey: process.env.API_KEY,
     authDomain: AUTH_DOM,
