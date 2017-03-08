@@ -7,3 +7,11 @@
 .bookmarks .active > a {
   color: #5bc0de;
 }
+
+@media only screen and (max-width: 765px) {
+      .bookmarks {
+    
+     float: right;
+     /*padding-left: 100px;*/
+  }
+}

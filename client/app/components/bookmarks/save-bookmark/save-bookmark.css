@@ -7,3 +7,9 @@
 .save-bookmark h4 {
   padding-bottom: 10px;
 }
+
+@media only screen and (max-width: 450px) {
+    .save-bookmark h4 {
+      font-size: 110%;
+  }
+}

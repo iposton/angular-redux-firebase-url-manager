@@ -9,7 +9,7 @@
 }
 
 .sidebar {
-  display: none;
+  /*display: none;*/
   padding-left: 0px;
   padding-right: 0px;
 }
@@ -17,6 +17,7 @@
 .sidebar ul {
   margin: 0px;
   padding: 0px;
+  
 }
 
 .sidebar ul li.active {
@@ -25,17 +26,24 @@
   text-decoration: none;
 }
 
-@media (min-width: 768px) {
-  .sidebar {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1000;
-    display: block;
-    overflow-x: hidden;
-    overflow-y: auto /* Scrollable contents if viewport is shorter than content. */;
-    background-color: #2b2828;
-    border-right: 1px solid #7b807e;
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  display: block;
+  overflow-x: hidden;
+  overflow-y: auto /* Scrollable contents if viewport is shorter than content. */;
+  background-color: #2b2828;
+  border-right: 1px solid #7b807e;
+}
+
+@media only screen and (max-width: 450px) {
+      .sidebar ul li {
+    
+     font-size: 14px;
   }
 }
+

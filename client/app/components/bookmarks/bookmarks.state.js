@@ -102,16 +102,12 @@ export const BookmarksActions = ($ngRedux, $http, $q) => {
 
             // Get a key for a new Post.
             const newPostKey = bookmark.key;
-            console.log(newPostKey);
-            console.log(bookmark);
-
-            // Write the new post's data simultaneously in the posts list and the user's post list.
+            
             const updates = {};
             updates[newPostKey + '/bookmark/'] = postData;
 
 
             database.ref().update(updates);
-
 
         }
 
@@ -120,7 +116,20 @@ export const BookmarksActions = ($ngRedux, $http, $q) => {
     };
 
     const deleteBookmark = bookmark => {
-        return { type: DELETE_BOOKMARK, payload: bookmark }
+            return (dispatch) => { 
+                // FIRST DELETE BOOKMARK FROM VIEW    
+                dispatch({ type: DELETE_BOOKMARK, payload: bookmark })
+
+                // Get a key for bookmark to delete.
+                const deletePostKey = bookmark.key;
+                
+                const deleteBm = {};
+                deleteBm[deletePostKey + '/bookmark/'] = bookmark = null;
+                
+                // DELETE DATA FROM FIREBASE REF
+                database.ref().update(deleteBm)  
+              
+        }
     }
 
     const resetSelectedBookmark = () => {
@@ -148,7 +157,7 @@ export const bookmarks = (state = [], { type, payload }) => {
             Object.freeze(state);
             return state.map(bookmark => bookmark.id === payload.id ? payload : bookmark);
         case DELETE_BOOKMARK:
-            return state.filter(bookmark => bookmark.id !== payload.id);
+            return state.filter(bookmark => bookmark.key !== payload.key);
         default:
             return state;
     }

@@ -1,6 +1,6 @@
 [
-    {"id": 0, "name": "Development"},
-    {"id": 1, "name": "Design"},
-    {"id": 2, "name": "Exercise"},
-    {"id": 3, "name": "Humor"}
+    {"id": 0, "name": "Category1"},
+    {"id": 1, "name": "Category2"},
+    {"id": 2, "name": "Category3"},
+    {"id": 3, "name": "Category4"}
 ]
