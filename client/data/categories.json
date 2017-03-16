@@ -1,6 +1,6 @@
 [
-    {"id": 0, "name": "Category1"},
-    {"id": 1, "name": "Category2"},
-    {"id": 2, "name": "Category3"},
-    {"id": 3, "name": "Category4"}
+    {"id": 0, "name": "Angular.js"},
+    {"id": 1, "name": "Javascript"},
+    {"id": 2, "name": "Web Development"},
+    {"id": 3, "name": "Inspiration"}
 ]
